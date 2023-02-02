@@ -15,7 +15,7 @@ var dbPassword = Environment.GetEnvironmentVariable("DB_SA_PASSWORD");
 
 //var dbHost = "localhost";
 //var dbname = "dbm_customer";
-//var dbPassword = "123!@#QWEqwe";
+//var dbPassword = "superpassword12345678";
 var connectionString = $"Data Source={dbHost}; Initial Catalog={dbname};User ID=sa; Password={dbPassword}; TrustServerCertificate=true";
 
 builder.Services.AddDbContext<CustomerDbContext>(opt => opt.UseSqlServer(connectionString));
